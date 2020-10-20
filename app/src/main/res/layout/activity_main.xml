@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_con"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button4"
+        android:onClick="open"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_won"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_won"
+        app:layout_constraintTop_toBottomOf="@+id/btn_won"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/btn_euro"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button2"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dollar" />
+
+    <Button
+        android:id="@+id/btn_won"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button3"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="@+id/btn_euro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_euro"
+        app:layout_constraintTop_toBottomOf="@+id/btn_euro" />
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/text2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_dollar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp" />
+
+    <EditText
+        android:id="@+id/inp"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/text1"
+        app:layout_constraintBottom_toTopOf="@+id/out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
+
+    <Button
+        android:id="@+id/btn_dollar"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button1"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/btn_euro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/out" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

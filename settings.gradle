@@ -1,0 +1,3 @@
+include ':javaprj'
+include ':app'
+rootProject.name = "Rate1"

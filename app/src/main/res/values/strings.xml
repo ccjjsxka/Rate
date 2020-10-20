@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rate1</string>
+    <string name="button1">dollar</string>
+    <string name="button2">EURO</string>
+    <string name="button3">WON</string>
+    <string name="text1">input RMB</string>
+    <string name="button4">CONFIG</string>
+    <string name="text2">zhuanhuan</string>
+    <string name="rate_dollar">dollar_rate</string>
+    <string name="rate_euro">euro_rate</string>
+    <string name="rate_won">won_rate</string>
+    <string name="button5">SAVE</string>
+</resources>
