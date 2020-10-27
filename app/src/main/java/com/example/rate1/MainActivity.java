@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     float dollarRate=6.77f, euroRate=8.70f, wonRate=0.0058f;
     private static final String TAG = "MainActivity2";
     Handler handler;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
