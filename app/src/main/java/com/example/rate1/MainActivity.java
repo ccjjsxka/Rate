@@ -17,7 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.jsoup.Jsoup;
-import org.w3c.dom.Document;
+import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
             InputStream in = http.getInputStream();
             String html = inputStream2String(in);
             Log.i(TAG,"run:html="+ html);
-//            Document doc = Jsoup.parse(html);
+            Document doc = Jsoup.parse(html);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
