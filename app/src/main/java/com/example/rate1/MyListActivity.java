@@ -25,7 +25,6 @@ public class MyListActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.mylist);
         String data[] = {"one","two","three","four"};
-
         ListAdapter adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,data);
         listView.setAdapter(adapter);
 
