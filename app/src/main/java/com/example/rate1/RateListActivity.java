@@ -25,6 +25,7 @@ public class RateListActivity extends ListActivity {
         String[] list_data = {"one","tow","three","four"};
         ListAdapter adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,list_data);
         setListAdapter(adapter);
+
         //获取网络数据
         Handler handler = new Handler() {
             @Override
